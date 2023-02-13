@@ -9,7 +9,17 @@ namespace InfinityCrawler
 {
 	public class CrawledUri
 	{
-		public Uri Location { get; set; }
+		private Uri location;
+
+		public Uri GetLocation()
+		{
+			return location;
+		}
+
+		public void SetLocation(Uri value)
+		{
+			location = value;
+		}
 
 		public CrawlStatus Status { get; set; }
 		
